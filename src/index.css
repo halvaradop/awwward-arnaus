@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind utilities;
+@tailwind components;
+
+@layer base {
+
+    header nav :is(#header-menu, #header-list) > span {
+        transition: margin 300ms 300ms, rotate 300ms 0ms;
+    }
+
+    header nav :is(#header-menu, #header-list) > span[data-active="true"]:nth-child(1) {
+        margin-bottom: -2px;
+        rotate: 40deg;
+        transition: margin 300ms 0ms, rotate 300ms 300ms;
+    }
+
+    header nav :is(#header-menu, #header-list) > span[data-active="true"]:nth-child(2) {
+        margin-top: 0px;
+        rotate: -40deg;
+        transition: margin 300ms 0ms, rotate 300ms 300ms;
+    }
+}
