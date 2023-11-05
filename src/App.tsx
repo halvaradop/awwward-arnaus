@@ -7,7 +7,7 @@ const App = () => {
         <Route path="/" element={<AppLayout />}>
             <Route index element={<HomePage />} />
         </Route>
-    ))
+    ), { basename: "/awwward-arnaus" })
 
     return <RouterProvider router={router} />
 }
