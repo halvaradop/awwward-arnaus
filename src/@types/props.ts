@@ -1,4 +1,5 @@
-import { Project } from "./types"
+import { InputHTMLAttributes } from "react"
+import { Project, Style } from "./types"
 
 export interface TitleSectionProps {
     className?: string,
@@ -13,4 +14,8 @@ export interface ProjectPreviewProps {
 
 export interface SkillsLineProps {
     skills: string[]
+}
+
+export interface InputProps extends Style, Omit<InputHTMLAttributes<HTMLInputElement>, "size" | "color"> {
+    
 }

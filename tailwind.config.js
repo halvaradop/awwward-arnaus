@@ -9,6 +9,12 @@ export default {
   },
   theme: {
     extend: {
+      colors: {
+        gray: {
+          DEFAULT: '#9F9F9F',
+          100: '#4E4E4E'
+        }
+      },
       animation: {
         marquee: "marquee 6s linear infinite 0s"
       },

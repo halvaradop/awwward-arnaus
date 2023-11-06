@@ -1,6 +1,6 @@
 import { useRef } from "react"
 import { motion, useScroll, useTransform } from "framer-motion"
-import { SkillsLineProps } from "../@types/props"
+import { SkillsLineProps } from "../../@types/props"
 
 const SkillsLine = ({ skills }: SkillsLineProps) => {
     const ref = useRef<HTMLDivElement>(null)

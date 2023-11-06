@@ -1,5 +1,5 @@
 import { motion } from "framer-motion"
-import { ProjectPreviewProps } from "../@types/props"
+import { ProjectPreviewProps } from "../../@types/props"
 
 const ProjectPreview = ({ project }: ProjectPreviewProps) => {
     const { title, urlImage } = project

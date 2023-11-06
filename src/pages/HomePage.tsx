@@ -1,6 +1,7 @@
 import hero from "../../public/images/hero.png"
-import { ProjectsListPreview } from "../components/ProjectsListPreview"
-import { Skills } from "../components/Skills"
+import { ProjectsListPreview } from "../components/Preview/ProjectsListPreview"
+import { SendMeForm } from "../components/SendMeForm"
+import { Skills } from "../components/Skills/Skills"
 import { TitleSection } from "../components/TitleSection"
 
 const HomePage = () => {
@@ -19,17 +20,25 @@ const HomePage = () => {
                 <TitleSection className="mb-10" title="Projects" hasLine={true} />
                 <ProjectsListPreview />
             </section>
-            <section className="mb-96">
+            <section>
                 <TitleSection title="About Me" hasLine={true} />
-                <div className="">
-                    <p className="text-lg/snug">
-                        I'am a software engineer and designer working on various projects. My skillset
-                        lies on creating branding packages & websites to deliver the full online experience
-                        for new and also veteran
-                        businesses.
-                    </p>
-                </div>
+                <p className="text-lg/snug">
+                    I'am a software engineer and designer working on various projects. My skillset
+                    lies on creating branding packages & websites to deliver the full online experience
+                    for new and also veteran
+                    businesses.
+                </p>
                 <Skills />
+            </section>
+            <section>
+                <TitleSection className="mb-10" title="Say Hello" hasLine={true} />
+                <div className="w-full">
+                    <p className="mb-12 text-lg/tight font-medium tracking-wide">
+                        Looking to start a new project our just want to say hi? Send me an email and i'll do my
+                        best to reply within 24 hrs!
+                    </p>
+                    <SendMeForm />
+                </div>
             </section>
         </div>
     )

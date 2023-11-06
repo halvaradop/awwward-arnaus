@@ -19,4 +19,12 @@
         rotate: -40deg;
         transition: margin 300ms 0ms, rotate 300ms 300ms;
     }
+
+    span {
+        display: block;
+    }
+
+    :is(button, input, textarea, div, select, option):focus {
+        outline: none;
+    }
 }
