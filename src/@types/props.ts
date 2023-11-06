@@ -10,3 +10,7 @@ export interface TitleSectionProps {
 export interface ProjectPreviewProps {
     project: Project
 }
+
+export interface SkillsLineProps {
+    skills: string[]
+}

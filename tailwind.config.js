@@ -9,8 +9,18 @@ export default {
   },
   theme: {
     extend: {
-      aspectRatio: {
-        
+      animation: {
+        marquee: "marquee 6s linear infinite 0s"
+      },
+      keyframes: {
+        marquee: {
+          "0%": {
+            translate: "100%"
+          },
+          "100%": {
+            translate: "-100%"
+          }
+        }
       }
     },
   },

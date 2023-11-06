@@ -9,4 +9,5 @@ const projectsPreview: Project[] = [
     { title: "03 Example", urlImage: projectPreview3 },
 ]
 
-export { projectsPreview }
+const skillsList: string[][] = [["HTML", "CSS", "JavaScript", "TailwindCSS", "Typescript"], ["Java", "Framer Motion", "Redux Toolkit", "React Router DOM", "Figma"]]
+export { projectsPreview, skillsList }

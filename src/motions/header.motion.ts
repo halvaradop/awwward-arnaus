@@ -21,7 +21,7 @@ const menuVariants: Variants = {
         opacity: 0,
         transition: {
             when: "afterChildren",
-            staggerChildren: 0.4,
+            staggerChildren: 0.28,
             staggerDirection: -1,
         }
     }
@@ -36,11 +36,15 @@ const itemVariants: Variants = {
         transition: {
             ease: "easeInOut",
             mass: 0.8,
-            duration: 0.4,
+            duration: 0.32,
         }
     },
     exit: {
         y: "100%",
+        transition: {
+            duration: 0.2,
+            mass: 0.2
+        }
     }
 }
 
@@ -54,6 +58,9 @@ const lineVariants: Variants = {
     },
     exit: {
         scaleX: 0,
+        transition: {
+            duration: 0.1
+        }
     }
 }
 
